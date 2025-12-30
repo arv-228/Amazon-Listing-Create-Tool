@@ -1,0 +1,52 @@
+{
+  "name": "amz-listing-gem",
+  "main": "main.cjs",
+  "description": "Premium Amazon Content Strategist",
+  "author": "Vonny Chan",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "electron:build": "npm run build && electron-builder"
+  },
+  "build": {
+    "appId": "com.myapp.ai",
+    "asar": true,
+    "files": [
+      "dist/**/*",
+      "main.cjs",
+      "package.json"
+    ],
+    "directories": {
+      "output": "release"
+    },
+    "win": {
+      "target": "portable"
+    }
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "openai": "^4.76.0",
+    "@anthropic-ai/sdk": "^0.32.0",
+    "lucide-react": "^0.462.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "axios": "^1.7.9",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.5.5",
+    "eventsource-parser": "^1.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "electron": "^33.2.1",
+    "electron-builder": "^24.13.3",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.0"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "AMZ Listing Gem",
+  "description": "A premium AI Gem for analyzing product visuals and generating high-precision Amazon listing content using 15-point relational reasoning.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
