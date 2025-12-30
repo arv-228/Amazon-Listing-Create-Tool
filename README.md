@@ -12,3 +12,4 @@ If you want to use Image Input function, please use Gemini or ChatGPT Api Key. T
 
 Text Input is not so precisely, unless text input work as Image Input's assistance.
 
+Click to go exe document
